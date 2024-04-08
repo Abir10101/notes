@@ -1,0 +1,40 @@
+# Companies
+
+- [x] Uber 
+- [ ] IBM
+- [x] HP
+- [ ] Paytm
+- [ ] Shyam Steel
+- [ ] Google
+- [x] PhonePe
+- [ ] Github
+- [ ] TCS
+- [ ] Zomato
+- [ ] PWC
+- [ ] Accenture
+- [ ] Swiggy
+- [ ] Amazon
+- [ ] IndusNet
+- [ ] Jio
+- [ ] Atlassain
+- [ ] Capgemini
+- [ ] MasterCard
+- [ ] Cognizant
+- [ ] Microsoft
+- [ ] Ola
+- [ ] Flipkart
+- [ ] Delliote
+- [ ] LensKart
+- [ ] Netflix
+- [ ] HCL
+- [ ] Zoho
+- [ ] Airtel
+- [ ] Airbnb
+- [ ] Qualcom
+- [ ] Bentley Systems
+- [ ] MongoDb
+- [ ] Ford
+- [ ] Redhat
+- [ ] Renault
+- [ ] Tech mahindra
+- [ ] Oracle

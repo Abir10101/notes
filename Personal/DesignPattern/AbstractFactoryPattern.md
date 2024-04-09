@@ -4,7 +4,7 @@
     - The Abstract Factory Pattern used for security measures by providing an interface for creating families of related or dependent objects without specifying their concrete classes.
     - The Abstract Factory defines the interface that all Concrete factories must implement, which consists of a set of methods for producing products.
 
-- Is that a [[Factory Pattern|docs.DesignPattern.FactoryPattern]] lurking inside the Abstract Factory?
+- Is that a [Factory Pattern](./FactoryPattern.md) lurking inside the Abstract Factory?
     - **HeadFirst**: Can you explain yourself, Factory Method? 
     - **Factory Method**: Sure. Both Abstract Factory and I create objects – that’s our jobs. But I do it through inheritance...
     - **Abstract Factory**: ...and I do it through object composition.

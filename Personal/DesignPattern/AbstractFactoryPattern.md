@@ -13,3 +13,5 @@
     - **HeadFirst**: Oh, I see, so another advantage is that you group together a set of related products. What happens if you need to extend that set of related products, to say add another one? Doesn’t that require changing your interface?
     - **Abstract Factory**: That’s true; my interface has to change if new products are added, which I know people don’t like to do. Use me whenever you have families of products you need to create and you want to make sure your clients create products that belong together.
     - **Factory Method**: Use me to decouple your client code from the concrete classes you need to instantiate, or if you don’t know ahead of time all the concrete classes you are going to need. To use me, just subclass me and implement my factory method!
+
+- How to show in code that `Factory Method create objects through inheritance and Abstract factory create object thorugh composition`?

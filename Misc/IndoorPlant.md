@@ -1,3 +1,7 @@
+---
+type: Checklist
+---
+
 # Indoor Plant
 
 - [ ] snake plant
@@ -5,3 +9,4 @@
 - [ ] money plant
 - [ ] aloe vera
 - [ ] pot
+- [ ] Asdd

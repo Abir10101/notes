@@ -1,3 +1,7 @@
+---
+type: Checklist
+---
+
 # TODO
 
 - [x] Learn [Design Patterns](./Personal/DesignPattern/Intro.md). (page: 144)

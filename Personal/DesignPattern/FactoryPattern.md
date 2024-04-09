@@ -83,22 +83,22 @@ class Pizza:
         self.dough = None
         self.sauce = None
         self.toppings = []
-	
+
     def getName(self):
         return self.name
-	
+
     def prepare(self):
         print(f"Preparing {self.name}")
-	
+
     def bake(self):
         print(f"Baking {self.name}")
-	
+
     def cut(self):
         print(f"Cutting {self.name}")
-	
+
     def box(self):
         print(f"Boxing {self.name}")
-	
+
     def __str__(self):
         display = f"---- {self.name} ----\n"
         display += f"{self.dough}\n"
@@ -118,7 +118,7 @@ class WbStyleCheesePizza(Pizza):
 class WbStyleVeggiePizza(Pizza):
     def __init__(self):
         super().__init__()
-        self.name = "West Bengal Style Sauce and Cheese Pizza"
+        self.name = "West Bengal Style Sauce and Veggie Pizza"
         self.dough = "Thin Crust Dough"
         self.sauce = "Marinara Sauce"
         self.toppings.append("Grated Reggiano Cheese")
@@ -135,7 +135,7 @@ class BanStyleCheesePizza(Pizza):
         self.sauce = "Plum Tomato Sauce"
         self.toppings.append("Fresh Mozzarella")
         self.toppings.append("Parmesan")
-	
+
     def cut(self):
         print(f"Cutting the pizza into square slices")
 
@@ -149,7 +149,7 @@ class BanStyleVeggiePizza(Pizza):
         self.toppings.append("Black Olives")
         self.toppings.append("Spinach")
         self.toppings.append("Eggplant")
-	
+
     def cut(self):
         print(f"Cutting the pizza into square slices")
 
@@ -157,13 +157,14 @@ class PizzaStore:
     @abstractmethod
     def createPizza(self):
         pass
-	
+
     def orderPizza(self, type :str):
         pizza = self.createPizza(type)
         pizza.prepare();
         pizza.bake();
         pizza.cut();
         pizza.box();
+        print(pizza)
 
 class WbPizzaStore(PizzaStore):
     def createPizza(self, type :str) -> Pizza:

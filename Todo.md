@@ -19,3 +19,4 @@ type: Checklist
 - [x] practice stack, queue, tree, sorting searching.
 - [ ] write her letter
 - [x] Sell second hand item
+- [ ] Practise test from items mentioned in resume

@@ -18,4 +18,4 @@ type: Checklist
 - [x] modify naukri profile
 - [x] practice stack, queue, tree, sorting searching.
 - [ ] write her letter
-- [ ] Sell second hand item
+- [x] Sell second hand item

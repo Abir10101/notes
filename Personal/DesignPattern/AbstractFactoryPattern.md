@@ -15,3 +15,7 @@
     - **Factory Method**: Use me to decouple your client code from the concrete classes you need to instantiate, or if you don’t know ahead of time all the concrete classes you are going to need. To use me, just subclass me and implement my factory method!
 
 - How to show in code that `Factory Method create objects through inheritance and Abstract factory create object thorugh composition`?
+
+## Example
+
+**Pizza Store:** [Click here](examples/afpPizzaStore.py).

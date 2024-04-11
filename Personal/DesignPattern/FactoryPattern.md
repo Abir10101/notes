@@ -15,7 +15,7 @@
 
 ## Example
 
-**Creating different user types:** [Click here](examples/fpUserFactory.py)
-
-**Creating Pizza Store:** [Click here](examples/fpPizzaStore.py).
+- **User Types:** [Click here](examples/fpUserFactory.py)
+- **Pizza Store:** [Click here](examples/fpPizzaStore.py).
+- **Computer Manufacturer:** [Click here](examples/fpComputerCompany.py).
 

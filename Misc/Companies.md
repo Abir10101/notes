@@ -1,6 +1,7 @@
 # Companies
 
-- [x] Uber 
+- [x] DevRev
+- [x] Uber
 - [ ] IBM
 - [x] HP
 - [ ] Paytm

@@ -4,7 +4,7 @@ type: Checklist
 
 # TODO
 
-- [x] Learn [Design Patterns](./Personal/DesignPattern/Introduction.md). (page: 144)
+- [x] Learn [Design Patterns](/Personal/DesignPattern/Introduction.md). (page: 144)
 - [ ] calculate travel expenses [kerdarnath](./Misc/Tour/Kedarnath.md).
 - [ ] post OSI model in linkedin.
 - [ ] what are HLD & LLD.

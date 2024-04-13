@@ -1,14 +1,17 @@
+---
+type: Checklist
+---
+
 # Companies
 
-- [x] DevRev
-- [x] Uber
+- [x] Uber 
 - [ ] IBM
 - [x] HP
-- [ ] Paytm
+- [x] Paytm
 - [ ] Shyam Steel
 - [ ] Google
 - [x] PhonePe
-- [ ] Github
+- [x] Github
 - [ ] TCS
 - [ ] Zomato
 - [ ] PWC
@@ -20,7 +23,7 @@
 - [ ] Atlassain
 - [ ] Capgemini
 - [ ] MasterCard
-- [ ] Cognizant
+- [x] Cognizant
 - [ ] Microsoft
 - [ ] Ola
 - [ ] Flipkart

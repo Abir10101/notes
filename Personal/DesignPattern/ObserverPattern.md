@@ -9,7 +9,15 @@
   - you can unsubscribe to stop receiving notification from the website's newsletter.
 - There are two types of observer pattern: **Push** & **Pull**
   - **Push:** Subject will notify the Subscribers.
+    - **Advantages:**
+      - Subscriber does not have to poll to the Publisher to check for any changes (cpu efficient).
+    - **Disadvantages:**
+      - Publisher will push all data to all observers, some of these data might be irrelevant to some observers/subscribers (size inefficient).
   - **Pull:** Subscribers will pull the data whenever needed from the Subject.
+    - **Advantages:**
+      - Subscriber will call to only required getter methods of Publisher to get the state needed (size efficient).
+    - **Disadvantages:**
+      - Subscriber have to always poll to the Publisher to check for any changes (cpu inefficient).
 
 
 ## Rough

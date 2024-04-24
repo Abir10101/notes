@@ -1,12 +1,12 @@
 from abc import ABC, abstractmethod
 
 # Interfaces
-class Observer():
+class Observer(ABC):
     @abstractmethod
     def update(self):
         pass
 
-class Observable():
+class Observable(ABC):
     @abstractmethod
     def registerObserver(self, o :Observer):
         pass
@@ -19,7 +19,7 @@ class Observable():
     def notifyObserver(self):
         pass
 
-class DisplayElement():
+class DisplayElement(ABC):
     @abstractmethod
     def display(self):
         pass

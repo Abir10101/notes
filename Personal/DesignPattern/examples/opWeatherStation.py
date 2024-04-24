@@ -57,7 +57,6 @@ class WeatherData(Observable):
     def getHumidity(self):
         return self.humidity
 
-
 class CurrentConditonDisplay(Observer):
     def __init__(self, weatherDataObject :Observable):
         self.temparature = None

@@ -5,6 +5,10 @@
 	- <ins>Creational Pattern</ins>: Object creation mechanisms for decoupling and code reuse.
 	- <ins>Structural Pattern</ins>: how to assemble objects and classes into larger structures.
 	- <ins>Behavioural Pattern</ins>: how to do effective communication and assignment responsibilities between objects.
+- **Design Principles:**
+  - Identify the aspects of your application that vary and separate them from what stays the same.
+  - Program to an interface, not an implementation.
+  - Favor composition over inheritance.
 
 ## Creational Pattern
 
@@ -12,3 +16,4 @@
 2. [Singleton Pattern](./SingletonPattern.md)
 3. [Abstract Factory Pattern](./AbstractFactoryPattern.md)
 4. [Dependency Inversion](./DependencyInversion.md)
+5. [Observer Pattern](./ObserverPattern.md)

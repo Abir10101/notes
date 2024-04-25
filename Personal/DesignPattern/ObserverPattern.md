@@ -25,4 +25,6 @@
   - Both the Subject and Observer use interfaces. The Subject keeps track of objects implementing the Observer interface, while the observers register with, and get notified by, the Subject interface. As we’ve seen, this keeps things nice and loosely coupled.
 - *Favor composition over inheritance:*
   - The Observer Pattern uses composition to compose any number of Observers with their Subjects. These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
+- *Classes should be open for extension, but closed for modification:*
+  - The Subject Class can notify more objects without changing its existing code.
 

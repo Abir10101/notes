@@ -1,7 +1,3 @@
----
-type: Checklist
----
-
 # Movies
 
 - [ ] Warcraft
@@ -11,4 +7,3 @@ type: Checklist
 - [x] Dune Two
 - [x] The Northman
 - [x] The woman in black
--

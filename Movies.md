@@ -1,3 +1,7 @@
+---
+type: Checklist
+---
+
 # Movies
 
 - [ ] Warcraft
@@ -11,3 +15,4 @@
 - [ ] Reign of Fire
 - [ ] Green Lantern: Emerald Knights
 - [ ] Green Lantern: First Flight
+- [ ] Afgsghss

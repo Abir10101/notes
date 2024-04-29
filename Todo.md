@@ -14,4 +14,5 @@ type: Checklist
 - [ ] visit disha for my eye.
 - [ ] complain letter to cesc
 - [x] apply to [Companies](./Misc/Companies.md).
-- [ ] Practise test from items mentioned in resume
+- [ ] Practise test from items mentioned in resume.
+- [x] follow up with previous replied connections from linkedin.

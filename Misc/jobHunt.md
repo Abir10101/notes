@@ -7,6 +7,7 @@
   - competative programming.
   - tech influencer.
   - open source project contribution.
+  - hackathons
 - update resumes with eye candy template.
 - use keywords from job posting in resume to improve ats score
 - ask Aishwarya Roy Chowdhury:

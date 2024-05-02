@@ -16,3 +16,4 @@ type: Checklist
 - [x] apply to [Companies](./Misc/Companies.md).
 - [ ] Practise test from items mentioned in resume.
 - [x] follow up with previous replied connections from linkedin.
+- [x] send connections to amazon and samsung electronics.

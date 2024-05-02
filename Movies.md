@@ -13,6 +13,3 @@ type: Checklist
 - [x] The woman in black
 - [x] In Time
 - [ ] Reign of Fire
-- [ ] Green Lantern: Emerald Knights
-- [ ] Green Lantern: First Flight
-- [ ] Afgsghss

@@ -42,3 +42,4 @@ type: Checklist
 - [ ] Renault
 - [ ] Tech mahindra
 - [ ] Oracle
+- https://account.amazon.jobs/en-US/jobs/2609648/apply

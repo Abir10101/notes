@@ -1,6 +1,7 @@
 # PYTHON INTERVIEW QUESTIONS
 
 - What is wsgi & asgi?
+https://www.fullstackpython.com/wsgi-servers.html
 - What is gunicorn?
 - How to secure an api in python?
 - what is csrf attack? How to avoid it?

@@ -33,3 +33,4 @@
 - But, in python web server does not have any module to run the Python interpreter.
 - Here comes the SGI (Server Gateway Interface). Web server will run the SGI program which in turn will run the Python interpreter.
 - So, the request will first enter the web server which will forward the request to SGI server which will execute the Python program.
+<hr>

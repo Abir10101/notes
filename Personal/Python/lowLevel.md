@@ -33,4 +33,16 @@
 - But, in python web server does not have any module to run the Python interpreter.
 - Here comes the SGI (Server Gateway Interface). Web server will run the SGI program which in turn will run the Python interpreter.
 - So, the request will first enter the web server which will forward the request to SGI server which will execute the Python program.
+
+
+### 3. WSGI
+
+- WSGI (Web Server Gateway Interface) is not a program but an interface. Programs that implements WSGI are:
+  - **Green Unicorn**: pre-fork worker model based server ported from the Ruby Unicorn project.
+  - **uWSGI**: highly-performant WSGI server implementation.
+  - **mod_wsgi**: Apache module implementing the WSGI specification.
+  - **CherryPy**: pure Python web server that also functions as a WSGI server.
+- Features of WSGI server:
+  - Gunicorn server can be configured to run multiple process of the app (also known as worker process) in different cpu cores, this enables in load distribution.
+
 <hr>

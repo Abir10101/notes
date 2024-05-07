@@ -37,12 +37,24 @@
 
 ### 3. WSGI
 
-- WSGI (Web Server Gateway Interface) is not a program but an interface. Programs that implements WSGI are:
+- WSGI (Web Server Gateway Interface) is not a program but an interface. Some programs that implements WSGI are:
   - **Green Unicorn**: pre-fork worker model based server ported from the Ruby Unicorn project.
   - **uWSGI**: highly-performant WSGI server implementation.
   - **mod_wsgi**: Apache module implementing the WSGI specification.
   - **CherryPy**: pure Python web server that also functions as a WSGI server.
-- Features of WSGI server:
-  - Gunicorn server can be configured to run multiple process of the app (also known as worker process) in different cpu cores, this enables in load distribution.
+- It forward requests to synchronous python applications or functions.
+- Gunicorn server can be configured to run multiple process of the app (also known as worker process) in different cpu cores, this enables in load distribution.
+
+
+### 4. ASGI
+
+- ASGI (Asynchronous Server Gateway Interface) is an interface. Some programs that implements ASGI are:
+  - **Daphne**: Maintained as part of the Django project. Supports HTTP/1, HTTP/2, and WebSockets.
+  - **Uvicorn**: Based on uvloop and httptools. Supports HTTP/1 and WebSockets.
+- It primarily forward requests to asynchronous-capable python applications or functions.
+- ASGI features:
+  - **WSGI compatibilty**: a synchronous function or WSGI application can be run with ASGI server.
+  - **WebSocket support**: ASGI servers support bidirectional communication channels like WebSockets, enabling real-time interactions between clients and servers. This enables building applications which require long-lived connections like real-time messaging applications, chat applications and streaming services.
+
 
 <hr>

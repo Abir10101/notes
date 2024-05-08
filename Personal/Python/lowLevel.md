@@ -1,6 +1,6 @@
 # PYTHON LOW LEVEL WORKING
 
-### 1. How a programming language works
+### 1. How a programming language works?
 
 - Source code (human readable) have to converted to machine code (0s & 1s) which the OS will execute.
 - In C/C++
@@ -26,14 +26,12 @@
   - Now, web server like Apache has module called `mod_php` has PHP compiler and Zend Engine build into it.
   - This means that PHP code can directly be executed from web servers.
 
-
 ### 2. How Python web application works? Use of Server Gateway Interface (WSGI/ASGI).
 
 - In PHP, we seen that web server has a module which containes the PHP compiler and Zend Engine (executer).
 - But, in python web server does not have any module to run the Python interpreter.
 - Here comes the SGI (Server Gateway Interface). Web server will run the SGI program which in turn will run the Python interpreter.
 - So, the request will first enter the web server which will forward the request to SGI server which will execute the Python program.
-
 
 ### 3. WSGI
 
@@ -45,7 +43,6 @@
 - It forward requests to synchronous python applications or functions.
 - Gunicorn server can be configured to run multiple process of the app (also known as worker process) in different cpu cores, this enables in load distribution.
 
-
 ### 4. ASGI
 
 - ASGI (Asynchronous Server Gateway Interface) is an interface. Some programs that implements ASGI are:
@@ -55,3 +52,66 @@
 - ASGI features:
   - **WSGI compatibilty**: a synchronous function or WSGI application can be run with ASGI server.
   - **WebSocket support**: ASGI servers support bidirectional communication channels like WebSockets, enabling real-time interactions between clients and servers. This enables building applications which require long-lived connections like real-time messaging applications, chat applications and streaming services.
+
+
+### 5. What happens when we run a python script?
+
+- When we run a python script, the script is submitted to the python interpreter.
+- Components of python interpreter:
+  - **Lexer:** It converts the code into stream of tokens.
+  - **Parser:** It converts the stream of tokens produced by lexer into AST (Abstract Syntax Tree). It represents hierarchical structure of the code.
+  - **Compiler:** It generates bytecode from AST.
+  - **PVM (Python Virtual Machine):** It is responsible for executing the bytecode produced by the compiler. It manages program runtime environment. It handles memory management, variable scoping, garbage collection, GIL (Global Interpreter Lock), Dynamic typing, etc.
+- In case of CPython implmentation, all interpreter components are build in C language.
+
+### 6. Memory Management
+
+We take the below example code and CPython implementation:
+
+```py
+def func():
+  x = 5
+  y = x
+```
+
+- Every variable or value in python is a struct object of C which has two variables
+  - `ob_refcnt`: reference counter
+  - `ob_type`: pointer that points to another struct object.
+- When PVM executes the line `x = 5`
+  - It creates struct object for `5` & `x` with different memory addresses.
+  - For `5` object:
+    - `ob_refcnt` incremented with 1.
+    - `ob_type` points to struct object of `Integer`.
+  - For `x` object:
+    - `ob_refcnt` defaults to 0.
+    - `ob_type` points to struct object of `5`.
+- When PVM executes the line `y = x`
+  - It creates struct object for `y`.
+  - For `5` object:
+    - `ob_refcnt` incremented with 2.
+    - `ob_type` points to struct object of `Integer`.
+  - For `x` object:
+    - `ob_refcnt` incremented with 1.
+    - `ob_type` points to struct object of `5`.
+  - For `y` object:
+    - `ob_refcnt` defaults to 0.
+    - `ob_type` points to struct object of `x`.
+  - For `y`, the struct object of `5` is not copied, i.e, **pass by reference**.
+- When we delete or change values of both variables `x` & `y`
+  - For `5` object:
+    - `ob_refcnt` decreased to 0.
+    - `ob_type` points to struct object of `Integer`.
+    -  This object becomes avaliable for **garbage collection**.
+
+### 7. GIL (Global Interpreter Lock)
+
+- GIL is a mutex that allows only one thread have control over the python's interpreter.
+- Python is **pass by reference** & variable's reference counter `ob_refcnt` is required to get the state of the object. This needs to be protected from race conditions. If multiple threads update `ob_refcnt`'s value then it can cause bugs like premature garbage collection.
+- There are two types of programs:
+  - I/O bound program.
+  - CPU based or computation based program.
+- For high CPU bound programs, GIL acquires the lock for a single thread and another thread cannot execute creating a performance bottleneck.
+- But for I/O bound programs, GIL does not have much impact as it is released when waiting for I/O operation. So, another thread can work, i.e., **Concurrency**.
+- For programs that have both I/O bound and high CPU bound operations
+  - GIL will starve I/O bound treads while CPU bound threads will reacquire the lock everytime.
+  - This issue was fixed in python version 3.2, by monitering the no. of request dropped counter by GIL.

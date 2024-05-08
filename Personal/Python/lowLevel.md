@@ -55,6 +55,3 @@
 - ASGI features:
   - **WSGI compatibilty**: a synchronous function or WSGI application can be run with ASGI server.
   - **WebSocket support**: ASGI servers support bidirectional communication channels like WebSockets, enabling real-time interactions between clients and servers. This enables building applications which require long-lived connections like real-time messaging applications, chat applications and streaming services.
-
-
-<hr>

@@ -9,4 +9,3 @@ type: Checklist
 - [ ] money plant
 - [ ] aloe vera
 - [ ] pot
-- [ ] Asdd

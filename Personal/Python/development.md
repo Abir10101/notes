@@ -32,8 +32,8 @@
 
 - **Model:**
   - > A model is a class representation of the structure and relationships of a database schema.
-  - It typically consists of entities, attributes, and relationships between them.
-  - Its purpose is to provide a provide a structure for the data, stored in the database.
+  - It consists of entities, attributes, and relationships between them.
+  - Its purpose is to provide a structure for the data, stored in the database.
   - It often includes methods to manipulate that data.
 - **Object Relational Mapping (ORM):**
   - > An ORM is a tool that allows you to interact with a database using Model objects rather than writing raw SQL code.

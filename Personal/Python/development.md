@@ -32,12 +32,12 @@
 
 - **Model:**
   - > A model is a class representation of the structure and relationships of a database schema.
-  - It consists of entities, attributes, and relationships between them.
+  - It consists of entities, attributes, and relationships between tables.
   - Its purpose is to provide a structure for the data, stored in the database.
-  - It often includes methods to manipulate that data.
+  - It often includes methods to manipulate datas in the table.
 - **Object Relational Mapping (ORM):**
-  - > An ORM is a tool that allows you to interact with a database using Model objects rather than writing raw SQL code.
+  - > An ORM is a tool that is used to interact with a database using Model objects rather than writing raw SQL code.
   - Its purpose is to provide a layer of abstraction between the application and the database, enabling developers to use the programming language's syntax instead of SQL.
 - **Migrations:**
-  - > A migration is a script that contains instructions for altering the database schema. It includes operations such as creating tables, adding columns, or modifying existing structures.
+  - > A migration is a script file that contains instructions for altering the database schema. It includes operations such as creating tables, adding columns, or modifying existing structures.
   - Migration files are stored in SCM, enables versioning the database schema with the application's models.

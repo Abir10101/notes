@@ -16,3 +16,4 @@ type: Checklist
 - [x] Practise test from items mentioned in resume.
 - [x] follow up with previous replied connections from linkedin.
 - [x] send connections to amazon and samsung electronics.
+- [ ] Woodland shoes paymentID: pay_O9yzVqj5hFzCKi

@@ -41,3 +41,125 @@
 - **Migrations:**
   - > A migration is a script file that contains instructions for altering the database schema. It includes operations such as creating tables, adding columns, or modifying existing structures.
   - Migration files are stored in SCM, enables versioning the database schema with the application's models.
+
+
+### 4. Global Error Handling In Flask
+
+- Flask has a decorator function `errorhandler()` that can catch errors globally from flask application.
+- Implementation:
+  ```py
+  from flask import Flask, abort, jsonify
+  from werkzeug.exceptions import HTTPException
+
+  app = Flask(__name__)
+
+  @app.errorhandler(Exception)
+  def handle_error(e):
+    code = 500
+    if isinstance(e, HTTPException):
+        code = e.code
+    return jsonify(error=str(e)), code
+
+  @app.route("/")
+  def index():
+    abort(409)
+  ```
+  Output:
+  ```sh
+  $ http get http://127.0.0.1:1234/
+  HTTP/1.0 409 CONFLICT
+  Content-Length: 31
+  Content-Type: application/json
+  Date: Sun, 29 Mar 2015 17:06:54 GMT
+  Server: Werkzeug/0.10.1 Python/3.4.3
+
+  {
+      "error": "409: Conflict"
+  }
+
+  $ http get http://127.0.0.1:1234/abcd
+  HTTP/1.0 404 NOT FOUND
+  Content-Length: 32
+  Content-Type: application/json
+  Date: Sun, 29 Mar 2015 17:06:58 GMT
+  Server: Werkzeug/0.10.1 Python/3.4.3
+
+  {
+      "error": "404: Not Found"
+  }
+  ```
+
+
+### 5. Middleware in Flask
+
+- Middleware is a class/function that runs before sending a request to a route function or after returning a response from a route function.
+- Usecases:
+  - Authorization
+  - Logging
+  - Caching
+- Implementations:
+  - Using `before_request` hook.
+    ```py
+    from flask import Flask, request
+    from datetime import datetime
+
+    app = Flask(__name__)
+
+    @app.before_request
+    def before_request():
+      timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+      print(f"Timestamp: {timestamp}, Route: {request.path}, Method: {request.method}")
+
+    @app.route('/')
+    def index():
+        return "Hello World"
+    ```
+  - Using python decorator.
+    ```py
+    from flask import Flask, request
+    from datetime import datetime
+    from functools import wraps
+
+    app = Flask(__name__)
+
+    def log_request_details(f):
+        @wraps(f)
+        def decorated_function(*args, **kwargs):
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            print(f"Timestamp: {timestamp}, Route: {request.path}, Method: {request.method}")
+            return f(*args, **kwargs)
+        return decorated_function
+
+    @app.route('/')
+    @log_request_details
+    def index():
+        return "Hello World"
+    ```
+  - Using `before_request_funcs` for a blueprint.
+    ```py
+    from flask import Flask, Blueprint, request
+    from datetime import datetime
+
+    app = Flask(__name__)
+
+    # Define the blueprint
+    api = Blueprint('main_blueprint', __name__)
+
+    # Define the before_request function for the blueprint
+    def logDetails():
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print(f"Timestamp: {timestamp}, Route: {request.path}, Method: {request.method}")
+
+    # Define a route within the blueprint
+    @api.route('/')
+    def index():
+        return 'hello world'
+
+    # Register the before_request function with the app's before_request_funcs
+    app.before_request_funcs = {
+        'main_blueprint': [logDetails]
+    }
+
+    # Register the blueprint with the main app
+    app.register_blueprint(api)
+    ```

@@ -163,3 +163,8 @@
     # Register the blueprint with the main app
     app.register_blueprint(api)
     ```
+
+
+### 6. Concurrency & Parralellism
+
+

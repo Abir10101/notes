@@ -20,6 +20,7 @@ type: Checklist
 - [ ] Amazon
 - [ ] IndusNet
 - [ ] Jio
+- [x] BharatPay
 - [ ] Atlassain
 - [ ] Capgemini
 - [ ] MasterCard
@@ -35,7 +36,7 @@ type: Checklist
 - [ ] Airtel
 - [ ] Airbnb
 - [ ] Qualcom
-- [ ] Bentley Systems
+- [x] Bentley Systems
 - [ ] MongoDb
 - [ ] Ford
 - [ ] Redhat

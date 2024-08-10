@@ -2,7 +2,7 @@
 
 ### 1. Test Driven Development
 
-- Test-Driven Development (TDD) is an iterative development cycle that emphasizes writing tests before writing the actual feature or function.  
+- Test-Driven Development (TDD) is an iterative development cycle that emphasizes writing tests before writing the actual feature or function.
 - TDD usually follows the "Red-Green-Refactor" cycle:
   1. Add a test to the test suite
   2. (Red) Run all the tests to ensure the new test fails.
@@ -165,6 +165,11 @@
     ```
 
 
-### 6. Concurrency & Parralellism
+### 6. Flask Application Context
 
-
+- Flask application object created like `app = FLask(__name__)` might cause importing errors while working in factory pattern archietecture or blueprints. To solve this issue flask uses contexts that is available thought the application.
+- Flask creates a application context that can be accessed via `current_app` attribute inside the blueprints.
+- **Application Context Lifecyle:** Whenever a request recieved from WSGI server flask creates a application comtext and request context. The context lives until the request completes processing.
+  - **Request Context:** This will contain the request attributes like HTTP methods, request headers, session attributes, etc.
+  - **Application Context:** This will contain config variables, logger attributes, global variables, etc.
+- We need to manually create and teardown contexts in certain scenarios where app request is not made. An example of certain scenario is Application Testing.

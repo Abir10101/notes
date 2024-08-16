@@ -4,7 +4,7 @@ Implement a subnetting scheme for a network with 100 hosts, using a /24 prefix.
 Configure a router to route traffic between two subnets (e.g., 192.168.1.0/24 and 192.168.2.0/24).
 Write a script to automate DNS record creation for a new domain.
 Section 2: Network Architectures
-Design a ne twork architecture for a highly available web application, including load balancing and database clustering.
+Design a network architecture for a highly available web application, including load balancing and database clustering.
 Implement a VPN connection between two sites using OpenVPN.
 Configure a network topology using Docker containers and bridges.
 Section 3: Network Protocols

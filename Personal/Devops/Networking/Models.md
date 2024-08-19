@@ -1,68 +1,90 @@
 
-# OSI MODEL
+# A Comparative Study of OSI and TCP/IP Model
 
-- Lets say we have an an simple web application that returns a 'hello world' if we call a certain api from postman.
-- Now the server might returns within a few miliseconds but there are many network processes that happened between the request and response. The request and response data both have to undergo same steps to reach the either servers.
-- Imagine a person (let’s call him P1) is inside a room (R1), and he need to visit another room (R2). However, getting from R1 to R2 isn't as straightforward as just walking through a door. Inside Room R1, there are several layers, each with multiple doors. P1 has to choose a door in each layer. Once P1 goes through a door, he lock it behind him and take the key with him. After passing through all the layers and collecting all the keys, P1 exits Room R1. Now, when P1 arrives at Room R2, he encounter similar layers and doors, just like in Room R1. P1 has to use the keys he collected earlier, to unlock the exact doors in Room R2, in the same order as he did in Room R1. After that he can enter Room R2.
-- In terms of networking,
-	- **Person P1** represents the data.
-	- **The layers** within the rooms are the OSI layers.
-	- **The doors and keys** represent the protocols used at each layer.
-	- **Room R1** is the sender's server, and **Room R2** is the receiver's server.
-- All the networking concepts are not covered in the analogy but the purpose is to clear the basic idea.
-- > **Defination of OSI model:**<br>
-OSI model is a framework that standerizes the functions & protocols and the ordering of those functions of a networking system.
-- The OSI model divides the network communication amoung 7 layers:
-	- **Application (Layer 7):**<br>
-	This is where end user's interaction happens. It provides functionalities like email, web browsing, file transfer.<br>
-	**Protocols**: SMTP, HTTP, FTP, POP3, SNMP.
-	- **Presentation (Layer 6):**<br>
-	This is where data is encrypted, compressed and formatted.<br>
-	**Protocols**: SSL, TLS, JPEG, MPEG
-	- **Session (Layer 5):**<br>
-	This layer establish, maintains & terminates connections. This layer is also handles the authentication and authorization of the connection. For example: When a user logs into a remote system using SSH (Secure Shell), the authentication happens at this layer. The SSH protocol verifies the user's identity (e.g., username and password) and establishes a secure session.<br>
-	**Protocols**: SIP, PPTP, L2TP, H.245, SMB, NFS, PAP
-	- **Transport (Layer 4):**<br>
-	This layer divides larger data into smaller segments for transmission. It ensures that data is transmitted without errors. This is achieved through error detection mechanisms (like checksums) and retransmission of corrupted or lost segments. This layer is implemented by the OS and this layer also determines the delivery ports. This layer is also known as **heart of the OSI model**.<br>
-	**Protocols**: TCP, UDP, SCTP, DCCP
-	- **Network (Layer 3):**<br>
-	This layer defines the IP address of both receiver & sender, and decides the best route for the data to be transmitted. It is implemented by the newtwork devices like routers and switches. Segments from transport layer is converted into Packets in this layer.<br>
-	**Protocols**: IP, ICMP, ARP, IPsec, MPLS.
-	- **Data Link (Layer 2):**<br>
-	This layer is responsible for connection to local network devices. It performs various functions like:
-		- The Data Link Layer encapsulates packets received from the Network Layer into frames. Each frame includes a header (containing source and destination addresses) and a trailer (often containing error-checking information).
-		- Adds physical addresses (MAC addresses) to the frame headers ensuring that frames are delivered to the correct devices on a local network.
-		- Flow control mechanisms are implemented to prevent a fast sender from overwhelming a slow receiver. Techniques such as stop-and-wait or sliding window protocols are commonly used for flow control.
-		- It also manages how multiple devices share the same communication medium (e.g., wired or wireless networks). It implements protocols to avoid collisions when two devices attempt to transmit simultaneously.<br>
-	**Protocols**: HDLC, LLDP, PPP, Ethernet, IEEE 802.11 (Wi-Fi)
-	- **Physical (Layer 1):**<br>
-	This is the actual layer which is responsible for devices to be physically connected. It is responsible for transmitting individual bits from one node to another. It defines how the data flows between the connected devices, possible modes of transmission are Simplex, half-duplex and full-duplex. This layer implements devices like Hub, Repeater, Modem, and Cables.<br>
-	**Protocols**: Ethernet, IEEE 802.11 (Wi-Fi), Bluetooth, USB
+**Abstract:** This paper delves into the fundamental concepts of network communication by examining the Open Systems Interconnection (OSI) model and the Transmission Control Protocol/Internet Protocol (TCP/IP) model. We explore the layered architecture of both models, outlining the functions and protocols associated with each layer. Furthermore, we analyze the key differences between the two models and their respective advantages.
 
-# TCP/IP MODEL
+## 1. Introduction
 
-- This model is similar to the OSI model but has only 4 layers.
-	- **Application (Layer 4):**<br>
-	This layer's responsibilities combines the Application Layer, Presentation Layer & Session Layer of the OSI model. That means, this layer implements the end-user applications (ex. email, browser, etc.), data encryption and compression & connection authentication and authorization.<br>
-	**Protocols:** SMTP, HTTP, FTP, SSL, TLS, SIP, PPTP, L2TP.
-	- **Transport (Layer 3):**<br>
-	This layer has similar functionalities like the OSI model's Transport layer. This implements:
-		- Divides the larger data into smaller chunks called segments.
-		- **Connection type:** Connection-Oriented, Connectionless
-		- Ensures the data is transmitted without errors and retransmission of corrupted or lost segments.<br>
-	**Protocols:** TCP, UDP
-	- **Network (Layer 2):**<br>
-	This layer has similar functionalities like OSI model's Network layer. It implements the IP address of both the sender & receiver, and decides the best route to transmit the data.<br>
-	**Protocols:** IP, ICMP, ARP, IPsec, MPLS.
-	- **Network Access Layer:**<br>
-	This layer combines the functionalities of Data Link Layer & Physical Layer of the OSI model. It handles the physical transmission of data over a network.<br>
-	**Protocols:** HDLC, LLDP, Ethernet, IEEE 802.11 (Wi-Fi)
+You're sitting there with Postman open, you hit send, and boom: "hello world" pops up on your screen in milliseconds.  Feels almost instantaneous, right? Like magic. But what most people don't realize is that beneath that simple interaction there's this hidden world of network processes frantically working to make it happen.
 
+In this interconnected world, understanding how data traverses networks is paramount. The OSI and TCP/IP
+models provide frameworks for comprehending the complexities of network communication. These models
+conceptually divide the communication process into distinct layers, each responsible for specific functions.
 
+## 2. The OSI Model
 
+The OSI model, a seven-layered architecture, offers a comprehensive framework for understanding network
+communication. Each layer performs specific functions and interacts with the layers above and below it.
 
+### 2.1 Layers of the OSI Model
 
+1. **Physical Layer (Layer 1):** The foundation of the OSI model, the Physical layer, governs the transmission of raw bits over a physical medium. It defines electrical, optical, and mechanical specifications
+for data transmission.
+	- **Protocols:** Ethernet, IEEE 802.11 (Wi-Fi), Bluetooth, USB
 
+2. **Data Link Layer (Layer 2):** Responsible for node-to-node data transfer, the Data Link layer
+establishes and terminates connections, ensuring reliable data transmission over the physical layer. It
+also manages media access control (MAC) addresses.
+	- **Protocols:** HDLC, LLDP, PPP, Ethernet, IEEE 802.11 (Wi-Fi)
 
+3. **Network Layer (Layer 3):** The Network layer facilitates routing and logical addressing. It determines the optimal path for data packets to travel across networks using IP addresses.
+	- **Protocols:** IP, ICMP, ARP, IPsec, MPLS
 
+4. **Transport Layer (Layer 4):** Providing end-to-end communication services, the Transport layer
+ensures reliable and ordered delivery of data segments. It manages segmentation, flow control, and
+error control.
+	- **Protocols:** TCP, UDP, SCTP, DCCP
 
+5. **Session Layer (Layer 5):** The Session layer establishes, manages, and terminates communication
+sessions between applications. It handles authentication, authorization, and synchronization.
+	- **Protocols:** SIP, PPTP, L2TP, H.245, SMB, NFS, PAP
+
+6. **Presentation Layer (Layer 6):** Concerned with data representation and formatting, the Presentation layer handles data encryption, decryption, compression, and conversion between different data
+formats.
+	- **Protocols:** SSL, TLS, JPEG, MPEG
+
+7. **Application Layer (Layer 7):** The topmost layer, the Application layer, provides services for user
+applications to access network resources. It facilitates functionalities like email, web browsing, and file
+transfer.
+	- **Protocols:** SMTP, HTTP, FTP, POP3, SNMP
+
+### 2.2 An Illustrative Analogy
+
+Imagine a person (P1) needing to move from one room (R1) to another (R2). Both rooms have multiple
+layers with doors, each requiring a specific key. P1 collects keys from each layer in R1 before exiting. Upon
+reaching R2, P1 uses the collected keys in reverse order to unlock the corresponding layers and enter.  
+In this analogy:
+- P1 represents data.
+- Layers within rooms are OSI layers.
+- Doors and keys represent protocols at each layer.
+- R1 and R2 symbolize sender and receiver servers.
+
+## 3. The TCP/IP Model
+
+The TCP/IP model, a four-layered architecture, is the practical model upon which the Internet is built. It
+consolidates some layers of the OSI model while maintaining a focus on end-to-end communication.
+
+### 3.1 Layers of the TCP/IP Model
+
+1. **Network Access Layer:** Combining the Physical and Data Link layers of the OSI model, this layer
+handles physical transmission of data over a network, including addressing and framing.
+	- **Protocols:** HDLC, LLDP, Ethernet, IEEE 802.11 (Wi-Fi)
+
+2. **Internet Layer:** Analogous to the OSI’s Network layer, this layer manages logical addressing and
+routing of data packets across networks using IP addresses.
+	- **Protocols:** IP, ICMP, ARP, IPsec, MPLS
+
+3. **Transport Layer:** Similar to the OSI’s Transport layer, this layer provides reliable or unreliable data
+transmission between applications. It manages segmentation, flow control, and error control.
+	- **Protocols:** TCP, UDP
+
+4. **Application Layer:** This layer encompasses the functionalities of the Application, Presentation, and
+Session layers of the OSI model. It provides services for user applications to access network resources,
+including data formatting, encryption, and session management.
+	- **Protocols:** SMTP, HTTP, FTP, SSL, TLS, SIP, PPTP, L2TP
+
+## 4. Conclusion
+
+The OSI and TCP/IP models are essential for understanding network communication. The OSI model
+provides a comprehensive theoretical framework, while the TCP/IP model reflects the practical implementation of the Internet. Both models contribute to the development and maintenance of robust and efficient
+networks.

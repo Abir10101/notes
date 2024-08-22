@@ -1,4 +1,4 @@
-# Domain Name System (DNS)
+# Decoding Domain Name System (DNS): The Internet's Secret Directory
 
 ## Abstract
 

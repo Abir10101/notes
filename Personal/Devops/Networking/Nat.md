@@ -1,6 +1,6 @@
 # NAT Gateway: A Comprehensive Guide for Network Engineers
 
-## 1. Basic Concept and Purpose
+## 1. Basic Concept
 
 Network Address Translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device. A NAT gateway is a network device that performs this translation.
 
@@ -14,7 +14,6 @@ The primary purposes of NAT are:
 ### 2.1 Static NAT
 - One-to-one mapping between a private and a public IP address
 - Useful for servers that need a consistent public IP address
-- Example: Internal server 192.168.1.100 always maps to public IP 203.0.113.5
 
 ### 2.2 Dynamic NAT
 - Maps private IP addresses to a pool of public IP addresses
@@ -25,7 +24,7 @@ The primary purposes of NAT are:
 - Many-to-one mapping, also known as IP masquerading
 - Multiple private IP addresses share a single public IP address
 - Distinguishes between different internal hosts by using port numbers
-- Most common type used in home routers and small businesses
+- Example: Most common type used in home routers and small businesses
 
 ## 3. NAT Gateway Components
 
@@ -53,22 +52,7 @@ The NAT table typically includes:
 - Protocol (TCP/UDP)
 - Timestamp for entry expiration
 
-<!-- ## 6. Advanced NAT Concepts
-
-### 6.1 NAT Traversal
-- Techniques to establish connections to hosts behind NAT gateways
-- Examples: STUN, TURN, ICE protocols
-
-### 6.2 NAT Hole Punching
-- Technique to enable direct connection between two hosts behind separate NAT gateways
-
-### 6.3 Application Layer Gateway (ALG)
-- Helps applications that use IP addresses in the payload (like FTP, SIP) work through NAT
-
-### 6.4 Hairpinning
-- Allows two hosts on the same private network to communicate using their public IP addresses -->
-
-## 6. NAT archietecture of home routers
+## 6. NAT archietecture of Routers
 
 ```
 Internet 
@@ -82,11 +66,10 @@ Local DHCP Server (inside router, assigns private IPs)
 Devices (get private IPs: 192.168.x.x)
 ```
 
-1. Router go online in Internet.
-    - Interacts with ISP's DHCP server to get public IP Address.
-    - Accessible through the internet.
-2. Router's DHCP server assigns private IPs to local devices.
-3. Router creates a NAT table for storing mapping of local device's IPs.
+1. Router's external network interface gets public IP Address from ISP's DHCP server and goes online in internet.
+2. Router's internal network interface used its local DHCP server & assigns private IPs to local devices.
+3. Router does the NAT Process for mapping local devices with internet.
+4. So, the router will act as a NAT gateway in this scenaio.
 
 ## 7. NAT in IPv6
 
@@ -94,45 +77,3 @@ While IPv6 reduces the need for NAT due to its large address space, NAT is still
 - IPv4 to IPv6 translation (NAT64)
 - Network renumbering
 - Multihoming scenarios
-
-<!-- ## 8. NAT in Cloud Environments
-
-Cloud providers offer managed NAT gateway services:
-- AWS: AWS NAT Gateway
-- Azure: Azure NAT Gateway
-- Google Cloud: Cloud NAT
-
-These services often provide:
-- High availability
-- Automatic scaling
-- Integration with other cloud services -->
-
-<!-- ## 9. NAT Security Considerations
-
-- NAT provides a basic level of security by hiding internal network structure
-- However, it's not a substitute for a firewall
-- NAT can interfere with some security protocols (e.g., IPsec) and may require special configuration -->
-
-<!-- ## 10. NAT Troubleshooting
-
-Common issues and troubleshooting steps:
-1. Verify NAT configurations
-2. Check NAT table for correct entries
-3. Analyze packet captures at both interfaces of the NAT gateway
-4. Test with different protocols (TCP vs UDP)
-5. Verify no conflicting firewall rules -->
-
-<!-- ## 11. NAT Performance Considerations
-
-- NAT can introduce latency due to packet processing
-- High-performance NAT gateways may use hardware acceleration
-- Consider NAT session limits in high-traffic environments -->
-
-<!-- ## 12. NAT Best Practices
-
-1. Document your NAT strategy and addressing scheme
-2. Use consistent NAT policies across the network
-3. Monitor NAT gateway performance and capacity
-4. Implement redundancy for critical NAT gateways
-5. Regularly audit and clean up static NAT entries
-6. Consider the impact of NAT on end-to-end connectivity and application compatibility -->

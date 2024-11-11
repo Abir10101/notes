@@ -16,4 +16,5 @@
 
 ## 3. What are your weaknesses?
 
-- 
+- I am working as Team Lead for 10 - 11 months only, I think I have to improve the skills more. Sometimes, I overestimate the problem and try to fix greater parts of the problem as a whole, which causes missing deadlines.
+- However, I am trying to enroll in online management courses and also I think MCA course will help me in solving these issues.

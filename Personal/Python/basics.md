@@ -9,7 +9,7 @@
 ## 2. Generators
 
 - Efficient way to create iterator object that generate values on-the-fly (runtime) rather than storing them all in memory at once.
-- Use Python's iterator protocol, implementing `__iter__()` and `__next__()` methods behind the scenes.
+- Uses Python's iterator protocol, implementing `__iter__()` and `__next__()` methods behind the scenes.
 - Generator Functions (using `yield`):
 ```py
 def count_up_to(n):
@@ -42,7 +42,6 @@ squares_gen = (x**2 for x in range(1000))
 ```
 - Key benefits of generators:
 	- Memory efficient (values generated on-demand), perfect for working with large datasets.
-	- Can represent infinite sequences.
 	- Lazy evaluation (compute values only when needed).
 - Differences between generators and regular functions:
 	- Generators use yield instead of return.

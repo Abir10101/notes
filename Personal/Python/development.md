@@ -39,7 +39,7 @@
   - > An ORM is a tool that is used to interact with a database using Model objects rather than writing raw SQL code.
   - Its purpose is to provide a layer of abstraction between the application and the database, enabling developers to use the programming language's syntax instead of SQL.
 - **Migrations:**
-  - > A migration is a script file that contains instructions for altering the database schema. It includes operations such as creating tables, adding columns, or modifying existing structures.
+  - > A migration is a script file that contains DML instructions of the database. It includes operations such as creating tables, adding columns, or modifying existing structures.
   - Migration files are stored in SCM, enables versioning the database schema with the application's models.
 
 

@@ -102,40 +102,7 @@ even_squares = {x: x**2 for x in range(10) if x % 2 == 0}
 print(even_squares)  # {0: 0, 2: 4, 4: 16, 6: 36, 8: 64}
 ```
 
-## 5. File Handling
-
-- Basic File Operations using with statement.
-```py
-# Reading a file
-with open('example.txt', 'r') as file:
-    # Read entire file as string
-    content = file.read()
-    
-    # OR read line by line
-    for line in file:
-        print(line.strip())
-
-# Writing to a file
-with open('output.txt', 'w') as file:
-    file.write('Hello, World!\n')
-    file.writelines(['Line 1\n', 'Line 2\n'])
-
-# Appending to a file
-with open('output.txt', 'a') as file:
-    file.write('Appended text\n')
-```
-- File Open Modes:
-```
-'r'  - Read (default)
-'w'  - Write (overwrites)
-'a'  - Append
-'x'  - Exclusive creation
-'b'  - Binary mode
-'t'  - Text mode (default)
-'+'  - Read and write
-```
-
-## 6. Serialization
+## 5. Serialization
 
 - This is a process of converting an object into a format that can be transmitted over network. The transmitted data can be deserialized or reconstructed into the obejct.
 - Serialization is useful in several scenarios:
@@ -146,14 +113,14 @@ with open('output.txt', 'a') as file:
     - **JSON (JavaScript Object Notation):** A text-based format that is human-readable and widely supported but does not stores the datatype of the variable.
     - **Pickle:** Converts objects into byte array format and it stores information about variable's datatypes. It can also serialize functions.
 
-## 7. Copying object
+## 6. Copying object
 
 - Assignment operator (=) does not create a copy of the object, but it creates new reference to same object.
 - Two ways to actually copy an object in python:
     - **Shallow Copy:** `y = copy.copy(x)`, this creates a clone of the object. In case of nested objects such as `[1,[1,2],3]`, it only clones the top layer of the object, the inner nested layers will be referenced.
     - **Deep Copy:** `y = copy.deepcopy(x)`, this creates a clone of the whole object, including the nested objects recursively. This ensures that the copied object is entirely independent of the original object.
 
-## 8. Dunder methods
+## 7. Dunder methods
 
 - Also known as "magic methods" or "special methods", are a set of predefined methods that you can use to enrich python classes.
 - These methods are surrounded by double underscores, such as `__init__` or `__str__`, and are automatically called when certain operations are performed on the objects of your class.
@@ -181,7 +148,7 @@ print(len(v1))  # Output: 2
 print(v1 + v2)  # Output: (4, 6)
 ```
 
-## 9. `__repr(self)__` vs `__str__(self)`
+## 8. `__repr(self)__` vs `__str__(self)`
 
 - Both dunder methods used for string representation of object.
 - `__repr__(self)`:
@@ -193,7 +160,7 @@ print(v1 + v2)  # Output: (4, 6)
     - The output of this method is what you see when you print an object or use the str() function on it.
     - If __str__ is not defined, Python will use the __repr__ method as a fallback.
 
-## 10. Properties of datatypes
+## 9. Properties of datatypes
 
 - **Dictionary:**
     - Key:Value pair store.

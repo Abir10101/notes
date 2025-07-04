@@ -7,7 +7,7 @@
 
 You're sitting there with Postman open, you hit send, and boom: "hello world" pops up on your screen in milliseconds.  Feels almost instantaneous, right? Like magic. But what most people don't realize is that beneath that simple interaction there's this hidden world of network processes frantically working to make it happen.
 
-In this interconnected world, understanding how data traverses networks is paramount. The OSI and TCP/IP models provide frameworks for comprehending the complexities of network communication. These models conceptually divide the communication process into distinct layers, each responsible for specific functions.
+The OSI and TCP/IP models provide frameworks for comprehending the complexities of network communication. These models conceptually divide the communication process into distinct layers, each responsible for specific functions.
 
 ## 2. The OSI Model
 
@@ -30,7 +30,7 @@ The OSI model, a seven-layered architecture, offers a comprehensive framework fo
 5. **Session Layer (Layer 5):** The Session layer establishes, manages, and terminates communication sessions between applications. It handles authentication, authorization, and synchronization.
 	- **Protocols:** SIP, PPTP, L2TP, H.245, SMB, NFS, PAP
 
-6. **Presentation Layer (Layer 6):** Concerned with data representation and formatting, the Presentation layer handles data encryption, decryption, compression, and conversion between different data formats.
+6. **Presentation Layer (Layer 6):** It handles data encryption, decryption, compression, and conversion between different data formats.
 	- **Protocols:** SSL, TLS, JPEG, MPEG
 
 7. **Application Layer (Layer 7):** The topmost layer, the Application layer, provides services for user applications to access network resources. It facilitates functionalities like email, web browsing, and file transfer.

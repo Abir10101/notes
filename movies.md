@@ -1,7 +1,3 @@
----
-type: Checklist
----
-
 # Movies
 
 - [ ] Warcraft

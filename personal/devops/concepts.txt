@@ -1,0 +1,4 @@
+- signals
+- trap command
+- find command
+- pipe command

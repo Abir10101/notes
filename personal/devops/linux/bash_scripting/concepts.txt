@@ -1,0 +1,5 @@
+- loop
+- conditions
+- taking input
+- named and normal paramter from cli
+- showing output

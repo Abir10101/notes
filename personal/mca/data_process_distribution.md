@@ -69,6 +69,26 @@ Data and process distribution determines how information and computational tasks
 
 ---
 
+### SPMD (Single-Site Processing, Multiple-Site Data)
+**Characteristics:**
+- Single centralized processor handles all data operations from multiple locations
+- Data distributed across multiple physical sites/nodes
+- Data partitioned geographically or logically
+- Common in geographically distributed organizations
+
+**How it works:**
+- All processing requests routed to central processor
+- Central processor retrieves data from multiple remote sites as needed
+- Data remains stored at distributed locations
+- Processing results sent back to requesting locations
+
+**Drawbacks:**
+- Central processor becomes a bottleneck
+- Single point of failure for all operations
+- Limited scalability as processing demands increase
+
+---
+
 ### MPMD (Multiple-Site Processing, Multiple-Site Data)
 **Characteristics:**
 - Fully distributed DBMS architecture
@@ -96,4 +116,5 @@ Data and process distribution determines how information and computational tasks
 |--------------|-----------------|------------|----------|
 | **SPSD** | Single | Single | Simple systems, centralized control |
 | **MPSD** | Multiple | Single | File sharing, workgroup applications |
+| **SPMD** | Single | Single | Geographically distributed applications |
 | **MPMD** | Multiple | Multiple | Enterprise systems, high availability |

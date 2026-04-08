@@ -4,10 +4,10 @@ Death by Black Hole: And Other Cosmic Quandaries(book)
 
 The Ends of the World: Volcanic Apocalypses, Lethal Oceans, and Our Quest to Understand Earth's Past Mass Extinctions - Peter brannen
 
-- cu exam - db, network
+- cu exam - network
 - investment adjustment
-- visit amar kaku
-- see property in parnashree
-- visit sbi and talk about property loan
+- visit amar kaku - saturday
+- see property in parnashree - call broker
+- visit sbi and talk about property loan - 18/04 saturday
 - read dbms doubts from assignment
-- ac servicing call
+- ac servicing call - done booking on saturday

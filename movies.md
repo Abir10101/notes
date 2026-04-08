@@ -1,9 +1,10 @@
 # Movies
 
-- [ ] Warcraft
+- [x] Warcraft
 - [ ] Tomb raider
-- [ ] mortal engines
+- [x] mortal engines
 - [x] Dune Two
+- [x] Dune
 - [x] The Northman
 - [x] The woman in black
 - [x] In Time
@@ -12,9 +13,8 @@
 - [x] Mars express
 - [ ] Klaus
 - [ ] Alita battle angel
-- [ ] Moana
 - [ ] Joker
-- [ ] Penguines of Madagascar
+- [x] Penguines of Madagascar
 - [ ] Togo
 - [ ] Dragon ballz : Super broly
 - [ ] The adventure of tintin🌟

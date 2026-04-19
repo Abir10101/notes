@@ -5,7 +5,6 @@
 - Password Authentication
 - Biometric Authentication
 - Certificate Based Authentication
-- Public Key Infrastucture (PKI)
 
 ## Systems
 - Kerberos

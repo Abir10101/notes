@@ -6,7 +6,7 @@ The Ends of the World: Volcanic Apocalypses, Lethal Oceans, and Our Quest to Und
 
 - call jio home and get connection
 
-!Hide Shorts grid from Homepage (Mobile)
+!Hide Shorts grid from Homepage (Mobile)  
 m.youtube.com##ytm-rich-section-renderer.rich-section-single-column:has-text(Shorts)
-!Hide Shorts section when searched (Computer)
+!Hide Shorts section when searched (Computer)  
 youtube.com##iron-selector#chips > yt-chip-cloud-chip-renderer.style-scope.yt-chip-cloud-renderer:has-text(Shorts)

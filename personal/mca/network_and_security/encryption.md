@@ -27,6 +27,6 @@
 - **Key Distribution Center (KDC)**: A centralized system that shares unique **session keys** for specific connections. It uses a "master key" hierarchy so that if one session key is stolen, the rest of the traffic remains secure.
 - **Kerberos**: A security protocol that acts like a "security guard" using a KDC hub to provide **Single Sign-On (SSO)** and time-limited "tickets" for accessing network services.
 - **Diffie-Hellman**: A protocol that allows two parties to establish a shared secret key safely over an insecure network even if they don't have a prior certificate.
-- **Wireless Sensor Network (WSN) key distribution**: Typically uses "key redistribution," where secret keys are pre-installed into sensor nodes before they are deployed.
+- **Wireless Sensor Network (WSN) key distribution**: It used in sensors where the machines are tiny, low-powered devices, so standered public-key cryptography is too expensive for them. It uses "key redistribution", where secret keys are pre-installed into sensor nodes before they are deployed.
 - **Group Key Management**: Used for inter-branch and intra-group networks; it often employs polynomial-based schemes and **Group Security Agents (GSA)** to manage keys between multiple departments.
 - **Key Lifecycle & Compliance**: Key management must follow a lifecycle (generation, storage in **HSMs**, rotation, and destruction) and comply with standards like **PCI DSS** or **HIPAA**.

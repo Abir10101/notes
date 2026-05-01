@@ -1,335 +1,335 @@
 # Movies
 
-- [x] Warcraft
-- [ ] Tomb raider
-- [x] mortal engines
-- [x] Dune Two
-- [x] Dune
-- [x] The Northman
-- [x] The woman in black
-- [x] In Time
-- [ ] Reign of Fire
-- [x] The batman
-- [x] Mars express
-- [ ] Klaus
-- [ ] Alita battle angel
-- [ ] Joker
-- [x] Penguines of Madagascar
-- [ ] Togo
-- [ ] Dragon ballz : Super broly
-- [ ] The adventure of tintin🌟
-- [ ] Up
-- [ ] Enemy at the gates
-- [ ] The secret life of pets
-- [ ] 1917
-- [ ] El camino: breaking bad
-- [ ] Knives out
-- [ ] Coco
-- [ ] Spirited away
-- [ ] The fall🌟
-- [ ] The lion king
-- [ ] Fury
-- [ ] The maze runner 1
-- [ ] Kingsman : the secret service
-- [ ] Ford vs ferrari
-- [ ] The aeronauts 🌟
-- [ ] Mard ko dard nhi hota
-- [ ] The great battle 🌟
-- [ ] Rush 2013
-- [ ] The accountant
-- [ ] Apocalypto
-- [ ] The gentleman
-- [ ] Warcraft
-- [ ] The magnificent seven
-- [ ] Cell 211
-- [ ] I am legend
-- [ ] Inglorious bastards
-- [ ] 6 underground
-- [ ] Taken
-- [ ] Serenity
-- [ ] The departed
-- [ ] Edge of tommorow
-- [ ] War horse🌟
-- [ ] Warrior
-- [ ] The martian
-- [ ] Battleship
-- [ ] Parasite
-- [ ] Gladiator
-- [ ] Swades
-- [ ] The fighter
-- [ ] Fight club
-- [ ] Seven
-- [ ] Predestination
-- [ ] Train to bhusan
-- [ ] Deepwater horizon
-- [ ] V for vendatta
-- [ ] Dredd
-- [ ] The platform
-- [ ] Justice league dark apokolips war
-- [ ] District 9
-- [ ] Minority report
-- [ ] Ready player one
-- [ ] Saving private Ryan
-- [ ] Captain Phillips 🌟
-- [ ] The tournament
-- [ ] War of the worlds
-- [ ] Upgrade 🌟
-- [ ] Fault in our stars
-- [ ] Mama
-- [ ] Leatherheads
-- [ ] Oceans eleven
-- [ ] Hotel mumbai
-- [ ] The hell or high water
-- [ ] The call of the wiild
-- [ ] Onwards
-- [ ] Munich
-- [ ] The BFG 2016
-- [ ] Lincoln
-- [ ] The man from U.N.C.L.E
-- [ ] Walk to remember
-- [ ] Age of shadows
-- [ ] The Siege of Jadotville 🌟
-- [ ] Jonny english reborn
-- [ ] Kudo and his two strings
-- [ ] Vinci da🌟
-- [ ] Hunt for the wilderpeople
-- [ ] Freaks
-- [ ] Headhunters
-- [ ] Isle of dogs
-- [ ] Whiplash🌟
-- [ ] The guilty
-- [ ] Ex machina🌟
-- [ ] Tomorrowland
-- [ ] Micheal clayton ( slow paced)
-- [ ] Rango
-- [ ] Annihilation (slow paced)
-- [ ] Hugo🌟
-- [ ] Get out
-- [ ] The forest gump
-- [ ] Megamind
-- [ ] Greenbook
-- [ ] Blindspotting
-- [ ] Coraline
-- [ ] The iron giant🌟
-- [ ] The green mile 🌟
-- [ ] Ratatouile
-- [ ] The motorcycle diaries🌟
-- [ ] Gangs of new york
-- [ ] Lion
-- [ ] Fantastic mr fox🌟
-- [ ] Snowpiercer🌟
-- [ ] Wreck it ralph
-- [ ] Identity
-- [ ] Unbreakable
-- [ ] Promare
-- [ ] Split
-- [ ] Our souls at night
-- [ ] Greyhound
-- [ ] A man called ove
-- [ ] The devils backbone
-- [ ] Jojo rabbit
-- [ ] Pan's Labyrinth
-- [ ] The inside out
-- [ ] Chaser
-- [ ] The witch 2018
-- [ ] Memories of murder🌟
-- [ ] Enemy(gem not for all)
-- [ ] Zodiac
-- [ ] Captain fantastic
-- [ ] Archive
-- [ ] The experiment 2001
-- [ ] Bridge of spies
-- [ ] Belyy Bim Chernoe ukho 🌟
-- [ ] The Exorcism of Emily Rose
-- [ ] The great escape
-- [ ] Babadook 🌟
-- [ ] The orphanage
-- [ ] The others
-- [ ] 21 bridges
-- [ ] Eddie the eagle 🌟
-- [ ] Thank you for smoking
-- [ ] American physco
-- [ ] Amélie
-- [ ] Who Framed Roger Rabbit 🌟
-- [ ] Cast away
-- [ ] King of Devil's Island 🌟
-- [ ] The outlaws
-- [ ] Forgotten
-- [ ] Hwayi: A Monster Boy
-- [ ] Midway
-- [ ] Saw
-- [ ] A bugs life🌟
-- [ ] Journal 64
-- [ ] Secret life of Walter Mitty 🌟
-- [ ] An Officer and a Spy
-- [ ] A bucket list
-- [ ] Million Dollar Baby (2004)
-- [ ] In Order of Disappearance
-- [ ] I saw the devil
-- [ ] Constantine: city of demons
-- [ ] Batman: Mask Of The Phantasm
-- [ ] Grave of the fireflies🌟
-- [ ] My Neighbor Totoro
-- [ ] Pom poko🌟
-- [ ] The eight hundred
-- [ ] The last action hero
-- [ ] The Girl with the Dragon Tattoo (2009)
-- [ ] Heneral Luna
-- [ ] Okja
-- [ ] Me and Earl and the Dying Girl
-- [ ] Candyman
-- [ ] Batman: Assault on Arkham
-- [ ] Porco  rosso 🌟
-- [ ] Howl's Moving castle
-- [ ] Nausicaä of the Valley of the Wind
-- [ ] Department Q:The Keeper of Lost Cass(Detective)
-- [ ] Black swan
-- [ ] Vanilla sky
-- [ ] The swordsman
-- [ ] Goldeneye
-- [ ] Cloud atlas 🌟
-- [ ] Honest theif
-- [ ] Coherence 🌟
-- [ ] The Boy in the Striped Pajamas 🌟
-- [ ] Another round
-- [ ] Insidious
-- [ ] The guest
-- [ ] Matchstick Men
-- [ ] The Judge
-- [ ] Infernal affairs
-- [ ] Big fish 🌟
-- [ ] Knock out
-- [ ] The little Prince 🌟
-- [ ] The Intouchables
-- [ ] The salvation 2014
-- [ ] Amadeus
-- [ ] Laputa: Castle in the Sky
-- [ ] Midnight runners
-- [ ] The 12th man 🌟
-- [ ] No mercy
-- [ ] Dead Poets Society
-- [ ] Below
-- [ ] The taking of deborah logan 🌟
-- [ ] John wick
-- [ ] John wick 3
-- [ ] Dark horse
-- [ ] Soul
-- [ ] The call 2020
-- [ ] Source code
-- [ ] American history x
-- [ ] Green room
-- [ ] Desperado
-- [ ] Princess Mononoke 🌟
-- [ ] Wait until dark🌟
-- [ ] Tenet
-- [ ] The crow
-- [ ] Inside man
-- [ ] Jack Snyder's justice league 🌟
-- [ ] Ghost in the shell 1995 🌟
-- [ ] Justice League: The Flashpoint Paradox
-- [ ] Justice League: War
-- [ ] Sword of the stranger🌟
-- [ ] Demon slayer Mugen train🌟
-- [ ] The man from earth
-- [ ] The thirteenth floor🌟
-- [ ] The detachment
-- [ ] Number 23 🌟
-- [ ] Nobody
-- [ ] Moon ��
-- [ ] Casting on the moon 🌟
-- [ ] Nayak (satyajit ray)
-- [ ] War of the arrows 🌟
-- [ ] The autopsy of jane doe 🌟
-- [ ] Oculus 🌟
-- [ ] The railway man
-- [ ] The game
-- [ ] Silent hill
-- [ ] Sinister
-- [ ] The death of superman
-- [ ] Wazir
-- [ ] A death in the gunj
-- [ ] The witcher: Nightmare of the wolf
-- [ ] The fugitive 1993
-- [ ] Akira 🌟
-- [ ] Paprika
-- [ ] Steamboy
-- [ ] The darjeeling limited
-- [ ] Murder in agonda
-- [ ] The batman 🌟
-- [ ] Flash Point
-- [ ] The Medium 🌟
-- [ ] Lunana: A Yak in the Classroom
-- [ ] A hard day 🌟
-- [ ] Rahasya
-- [ ] Dracula Sir 🌟
-- [ ] Aamir 2008
-- [ ] Aniara
-- [ ] Batman hush
-- [ ] A tale of two sisters
-- [ ] The target
-- [ ] Vampire hunter bloodlust
-- [ ] Batman Gotham Knight
-- [ ] Son of Batman
-- [ ] Btaman: The killing Joke
-- [ ] Batman: The dark knight returns (1/2)
-- [ ] Batman Gotham by gaslight
-- [ ] Justice league: Flash point paraodox
-- [ ] Justice league dark
-- [ ] Justice league dark apokalips war
-- [ ] Batman Under the red hood
-- [ ] The death of superman
-- [ ] Batman: The Long Halloween(1/2)
-- [ ] Injustice
-- [ ] Justice league doom 🌟
-- [ ] Alone 2007 🌟
-- [ ] Summit of the gods
-- [ ] Rocketry 🌟
-- [ ] 1408 🌟
-- [ ] 13b
-- [ ] Sea fog
-- [ ] Poltergeist
-- [ ] Justice league:crisis of two earths
-- [ ] Superman/Batman: apocalypse
-- [ ] Batman: Year one 🌟
-- [ ] Superman vs The Elite
-- [ ] Yeh saali asiqui
-- [ ] The unbearable weight of massive talent
-- [ ] 28 days later
-- [ ] Deja vu 2006 🌟
-- [ ] The road
-- [ ] Knowing
-- [ ] Vikram veda 🌟
-- [ ] Vikram
-- [ ] Jin-Roh: The wolf brigade
-- [ ] The jungle
-- [ ] Guns akimbo
-- [ ] Mortal kombat legends: scorpion's revenge
-- [ ] Mortal kombat legends: snow blind
-- [ ] Jujutsu kaisen 0
-- [ ] The outfit
-- [ ] Mithya 2008
-- [ ] Deadstream 🌟
-- [ ] Terrifier 2
-- [ ] Smile 🌟
-- [ ] Bullet Train
-- [ ] The truman show 🌟
-- [ ] The prey
-- [ ] Bullet train
-- [ ] Everything everywhere all at once 🌟
-- [ ] Rec
-- [ ] Midnight meat train
-- [ ] Qala
-- [ ] Session 9
-- [ ] Chup
-- [ ] Swiss army man
-- [ ] Pacific Rim
-- [ ] Evil dead rise
-- [ ] Noroi
-- [ ] Shutter
-- [ ] Grave encounters
-- [ ] As above, so below 🌟
-- [ ] Ju oh the grudge
-- [ ] The ritual
-- [ ] Sunshine
-- [ ] The endless
-- [ ] Another earth 🌟
+- Warcraft
+- Tomb raider
+- mortal engines
+- Dune Two
+- Dune
+- The Northman
+- The woman in black
+- In Time
+- Reign of Fire
+- The batman
+- Mars express
+- Klaus
+- Alita battle angel
+- Joker
+- Penguines of Madagascar
+- Togo
+- Dragon ballz : Super broly
+- The adventure of tintin🌟
+- Up
+- Enemy at the gates
+- The secret life of pets
+- 1917
+- El camino: breaking bad
+- Knives out
+- Coco
+- Spirited away
+- The fall🌟
+- The lion king
+- Fury
+- The maze runner 1
+- Kingsman : the secret service
+- Ford vs ferrari
+- The aeronauts 🌟
+- Mard ko dard nhi hota
+- The great battle 🌟
+- Rush 2013
+- The accountant
+- Apocalypto
+- The gentleman
+- Warcraft
+- The magnificent seven
+- Cell 211
+- I am legend
+- Inglorious bastards
+- 6 underground
+- Taken
+- Serenity
+- The departed
+- Edge of tommorow
+- War horse🌟
+- Warrior
+- The martian
+- Battleship
+- Parasite
+- Gladiator
+- Swades
+- The fighter
+- Fight club
+- Seven
+- Predestination
+- Train to bhusan
+- Deepwater horizon
+- V for vendatta
+- Dredd
+- The platform
+- Justice league dark apokolips war
+- District 9
+- Minority report
+- Ready player one
+- Saving private Ryan
+- Captain Phillips 🌟
+- The tournament
+- War of the worlds
+- Upgrade 🌟
+- Fault in our stars
+- Mama
+- Leatherheads
+- Oceans eleven
+- Hotel mumbai
+- The hell or high water
+- The call of the wiild
+- Onwards
+- Munich
+- The BFG 2016
+- Lincoln
+- The man from U.N.C.L.E
+- Walk to remember
+- Age of shadows
+- The Siege of Jadotville 🌟
+- Jonny english reborn
+- Kudo and his two strings
+- Vinci da🌟
+- Hunt for the wilderpeople
+- Freaks
+- Headhunters
+- Isle of dogs
+- Whiplash🌟
+- The guilty
+- Ex machina🌟
+- Tomorrowland
+- Micheal clayton ( slow paced)
+- Rango
+- Annihilation (slow paced)
+- Hugo🌟
+- Get out
+- The forest gump
+- Megamind
+- Greenbook
+- Blindspotting
+- Coraline
+- The iron giant🌟
+- The green mile 🌟
+- Ratatouile
+- The motorcycle diaries🌟
+- Gangs of new york
+- Lion
+- Fantastic mr fox🌟
+- Snowpiercer🌟
+- Wreck it ralph
+- Identity
+- Unbreakable
+- Promare
+- Split
+- Our souls at night
+- Greyhound
+- A man called ove
+- The devils backbone
+- Jojo rabbit
+- Pan's Labyrinth
+- The inside out
+- Chaser
+- The witch 2018
+- Memories of murder🌟
+- Enemy(gem not for all)
+- Zodiac
+- Captain fantastic
+- Archive
+- The experiment 2001
+- Bridge of spies
+- Belyy Bim Chernoe ukho 🌟
+- The Exorcism of Emily Rose
+- The great escape
+- Babadook 🌟
+- The orphanage
+- The others
+- 21 bridges
+- Eddie the eagle 🌟
+- Thank you for smoking
+- American physco
+- Amélie
+- Who Framed Roger Rabbit 🌟
+- Cast away
+- King of Devil's Island 🌟
+- The outlaws
+- Forgotten
+- Hwayi: A Monster Boy
+- Midway
+- Saw
+- A bugs life🌟
+- Journal 64
+- Secret life of Walter Mitty 🌟
+- An Officer and a Spy
+- A bucket list
+- Million Dollar Baby (2004)
+- In Order of Disappearance
+- I saw the devil
+- Constantine: city of demons
+- Batman: Mask Of The Phantasm
+- Grave of the fireflies🌟
+- My Neighbor Totoro
+- Pom poko🌟
+- The eight hundred
+- The last action hero
+- The Girl with the Dragon Tattoo (2009)
+- Heneral Luna
+- Okja
+- Me and Earl and the Dying Girl
+- Candyman
+- Batman: Assault on Arkham
+- Porco  rosso 🌟
+- Howl's Moving castle
+- Nausicaä of the Valley of the Wind
+- Department Q:The Keeper of Lost Cass(Detective)
+- Black swan
+- Vanilla sky
+- The swordsman
+- Goldeneye
+- Cloud atlas 🌟
+- Honest theif
+- Coherence 🌟
+- The Boy in the Striped Pajamas 🌟
+- Another round
+- Insidious
+- The guest
+- Matchstick Men
+- The Judge
+- Infernal affairs
+- Big fish 🌟
+- Knock out
+- The little Prince 🌟
+- The Intouchables
+- The salvation 2014
+- Amadeus
+- Laputa: Castle in the Sky
+- Midnight runners
+- The 12th man 🌟
+- No mercy
+- Dead Poets Society
+- Below
+- The taking of deborah logan 🌟
+- John wick
+- John wick 3
+- Dark horse
+- Soul
+- The call 2020
+- Source code
+- American history x
+- Green room
+- Desperado
+- Princess Mononoke 🌟
+- Wait until dark🌟
+- Tenet
+- The crow
+- Inside man
+- Jack Snyder's justice league 🌟
+- Ghost in the shell 1995 🌟
+- Justice League: The Flashpoint Paradox
+- Justice League: War
+- Sword of the stranger🌟
+- Demon slayer Mugen train🌟
+- The man from earth
+- The thirteenth floor🌟
+- The detachment
+- Number 23 🌟
+- Nobody
+- Moon ��
+- Casting on the moon 🌟
+- Nayak (satyajit ray)
+- War of the arrows 🌟
+- The autopsy of jane doe 🌟
+- Oculus 🌟
+- The railway man
+- The game
+- Silent hill
+- Sinister
+- The death of superman
+- Wazir
+- A death in the gunj
+- The witcher: Nightmare of the wolf
+- The fugitive 1993
+- Akira 🌟
+- Paprika
+- Steamboy
+- The darjeeling limited
+- Murder in agonda
+- The batman 🌟
+- Flash Point
+- The Medium 🌟
+- Lunana: A Yak in the Classroom
+- A hard day 🌟
+- Rahasya
+- Dracula Sir 🌟
+- Aamir 2008
+- Aniara
+- Batman hush
+- A tale of two sisters
+- The target
+- Vampire hunter bloodlust
+- Batman Gotham Knight
+- Son of Batman
+- Btaman: The killing Joke
+- Batman: The dark knight returns (1/2)
+- Batman Gotham by gaslight
+- Justice league: Flash point paraodox
+- Justice league dark
+- Justice league dark apokalips war
+- Batman Under the red hood
+- The death of superman
+- Batman: The Long Halloween(1/2)
+- Injustice
+- Justice league doom 🌟
+- Alone 2007 🌟
+- Summit of the gods
+- Rocketry 🌟
+- 1408 🌟
+- 13b
+- Sea fog
+- Poltergeist
+- Justice league:crisis of two earths
+- Superman/Batman: apocalypse
+- Batman: Year one 🌟
+- Superman vs The Elite
+- Yeh saali asiqui
+- The unbearable weight of massive talent
+- 28 days later
+- Deja vu 2006 🌟
+- The road
+- Knowing
+- Vikram veda 🌟
+- Vikram
+- Jin-Roh: The wolf brigade
+- The jungle
+- Guns akimbo
+- Mortal kombat legends: scorpion's revenge
+- Mortal kombat legends: snow blind
+- Jujutsu kaisen 0
+- The outfit
+- Mithya 2008
+- Deadstream 🌟
+- Terrifier 2
+- Smile 🌟
+- Bullet Train
+- The truman show 🌟
+- The prey
+- Bullet train
+- Everything everywhere all at once 🌟
+- Rec
+- Midnight meat train
+- Session 9
+- Chup
+- Swiss army man
+- Pacific Rim
+- Evil dead rise
+- Noroi
+- Shutter
+- Grave encounters
+- As above, so below 🌟
+- Ju oh the grudge
+- The ritual
+- Sunshine
+- The endless
+- Another earth 🌟
+- Occult

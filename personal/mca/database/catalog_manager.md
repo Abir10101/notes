@@ -1,6 +1,6 @@
 ## Catalog Manager in DDBMS
 
-The **Catalog Manager** (also called **Data Dictionary Manager** or **Metadata Manager**) stores information about the data and privides essentia information for query processing and optimization.
+The **Catalog Manager** (also called **Data Dictionary Manager** or **Metadata Manager**) stores information about the data and provides essential information for query processing and optimization.
 
 ### Information It Stores
 

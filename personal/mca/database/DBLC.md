@@ -20,7 +20,7 @@ The **Database Life Cycle (DBLC)** is a structured process that outlines the sta
 * **DBMS Selection:** Choose the appropriate software (e.g., PostgreSQL, MongoDB, MySQL).
 * **Logical & Physical Design:** Map the conceptual model into actual tables and columns while applying **normalization**, **indexing**, and **partitioning**.
 
-#### **3. Implementation and Loading**
+#### **3. Implementation and Loading Data**
 
 * **Environment Setup:** Install and configure the DBMS on the server.
 * **Schema Creation:** Run SQL scripts to create the tables, views, and constraints.

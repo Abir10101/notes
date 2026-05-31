@@ -1,32 +1,96 @@
 # Encryption
 
-## Techniques
+Encryption converts readable data (plaintext) into scrambled unreadable form (ciphertext) using mathematical algorithms and keys. Only party with correct key can decrypt back to original. Provides **confidentiality**—hides message content from unauthorized viewers.
 
-### Traditional techniques
-- **Substitution Cipher Technique**: This method replaces characters with other letters, symbols, or units of text, changing their identity but keeping their original position in the string.
-- **Transposition Cipher Technique**: This shifts the positions of characters to create a permutation of the original message. A common example is the **Rail Fence Cipher**, where plaintext is written in a zigzag pattern on imaginary "rails" and then read off in rows.
+---
 
-### Modern techniques
-- **Stream Cipher technique**: Encrypts data one bit or byte at a time as it is sent. Because they can jumble and unjumble data "on the fly," they are ideal for live communication (e.g., the RC4 algorithm).
-- **Block Cipher technique**: Processes data in fixed-size chunks or "blocks" (typically 64 or 128 bits). Examples include **DES** (56-bit key), **Triple DES**, and **AES**.
-    - **Electronic Codebook (ECB), Cipher Block Chaining (CBC), Counter (CTR), and Output Feedback (OFB)**: These are the standard "modes of operation" for block ciphers used to determine how individual blocks are processed securely.
+## Encryption Types
 
-## Types
-- **Symmetric Key encryption (Conventional algorithm)**: Uses a single secret key for both locking and unlocking data.
-    - **Pros**: It is much faster and simpler to implement than asymmetric methods.
-    - **Cons**: It is difficult to share keys securely and does not scale well for large numbers of users.
-- **Asymmetric Key encryption (Public key encryption)**: Uses a mathematically related pair of keys—a **public key** for encryption and a **private key** for decryption.
-    - **RSA**: A popular algorithm used for encryption and digital signatures; its security relies on the difficulty of factoring large prime numbers.
-    - **Knapsack (Merkle-Hellman)**: An early asymmetric system using "super-increasing" integer sequences; while faster than RSA, it is now largely considered impractical due to vulnerabilities.
+### 1. Symmetric Key Encryption (Conventional)
 
-## Key management & distribution
-- **Public announcement**: Users broadcast their public keys to everyone; however, this is risky as attackers can impersonate users.
-- **Publicly available Directory**: Keys are stored in a trusted list with user details; though searchable, these lists remain vulnerable to tampering.
-- **Public key authority**: A safer version of a directory where users check a secure list in real-time to obtain the correct keys.
-- **Certification Authorities (CA)**: Trusted entities that issue **digital certificates** to confirm the identity of a website or individual. The CA signs the certificate with its own private key to ensure it is tamper-resistant.
-- **Key Distribution Center (KDC)**: A centralized system that shares unique **session keys** for specific connections. It uses a "master key" hierarchy so that if one session key is stolen, the rest of the traffic remains secure.
-- **Kerberos**: A security protocol that acts like a "security guard" using a KDC hub to provide **Single Sign-On (SSO)** and time-limited "tickets" for accessing network services.
-- **Diffie-Hellman**: A protocol that allows two parties to establish a shared secret key safely over an insecure network even if they don't have a prior certificate.
-- **Wireless Sensor Network (WSN) key distribution**: It used in sensors where the machines are tiny, low-powered devices, so standered public-key cryptography is too expensive for them. It uses "key redistribution", where secret keys are pre-installed into sensor nodes before they are deployed.
-- **Group Key Management**: Used for inter-branch and intra-group networks; it often employs polynomial-based schemes and **Group Security Agents (GSA)** to manage keys between multiple departments.
-- **Key Lifecycle & Compliance**: Key management must follow a lifecycle (generation, storage in **HSMs**, rotation, and destruction) and comply with standards like **PCI DSS** or **HIPAA**.
+Uses **single shared secret key** for both encryption and decryption. Sender encrypts with key; receiver decrypts with same key.
+
+**Advantages**:
+- Fast computation (100-1000x faster than asymmetric)
+- Simple implementation
+- Low overhead
+
+**Disadvantages**:
+- Key sharing problem—must safely transmit secret key through insecure network
+- Poor scaling—each pair of users needs unique key (100 users = 4,950 keys needed)
+- No non-repudiation—both parties have same key, cannot prove who sent message
+
+**Techniques Used**:
+
+#### Traditional Methods
+- **Substitution Cipher**: Replace each character with different letter/symbol (e.g., Caesar cipher A→B, B→C)
+- **Transposition Cipher**: Rearrange character positions (e.g., Rail Fence Cipher writes message in zigzag pattern, reads off in rows)
+
+#### Modern Methods
+- **Stream Cipher**: Encrypts one bit/byte at a time during transmission. Processes data "on the fly" as arrives. Good for live communication (RC4 algorithm)
+- **Block Cipher**: Encrypts fixed-size data chunks (64 or 128 bits). Process entire block before moving to next. Examples: DES (56-bit), Triple DES, AES (128-256 bit)
+
+**Block Cipher Modes of Operation** (determine how blocks processed securely):
+- **ECB (Electronic Codebook)**: Each block encrypted independently
+- **CBC (Cipher Block Chaining)**: Each block depends on previous block output
+- **CTR (Counter)**: Uses counter value instead of data repetition
+- **OFB (Output Feedback)**: Feedback of previous operation becomes input for next
+
+---
+
+### 2. Asymmetric Key Encryption (Public Key)
+
+Uses **mathematically-related key pair**: public key for encryption, private key for decryption. Public key shareable; private key kept secret.
+
+**Advantages**:
+- Solves key sharing problem—public key broadcast openly, private key stays secret
+- Enables digital signatures—proves sender identity
+- Scales well—each user needs one pair regardless of communication partners
+- Non-repudiation—sender cannot deny sending message (only they have private key)
+
+**Disadvantages**:
+- Computationally expensive (100-1000x slower than symmetric)
+- Impractical for large data volumes
+- Requires trusted method to verify public key belongs to correct person
+
+**Algorithms**:
+
+- **RSA (Rivest-Shamir-Adleman)**
+  - Security based on difficulty of factoring large prime numbers
+  - Used for both encryption and digital signatures
+  - Standard in industry
+  
+- **Knapsack (Merkle-Hellman)**
+  - Early asymmetric system using "super-increasing" integer sequences
+  - Theoretically faster than RSA
+  - Now impractical—discovered vulnerabilities make unsafe
+
+---
+
+## Key Management & Distribution
+
+Secure communication requires getting encryption keys safely to intended recipient without compromise.
+
+### Methods for Symmetric Keys
+
+(Challenge: Both parties need identical key without exposing to network)
+
+- **Key Distribution Center (KDC)**: Centralized trusted system. Generates unique session keys for each connection. Uses master key hierarchy so stealing one session key doesn't compromise others
+- **Kerberos**: Security protocol using KDC. Provides Single Sign-On (SSO)—log in once, access multiple services. Uses time-limited "tickets" preventing replay attacks
+- **Pre-shared out-of-band**: Exchange keys through secure offline channel before communication
+
+### Methods for Public Keys
+
+(Challenge: Must verify public key truly belongs to intended recipient, not attacker)
+
+- **Public announcement**: Broadcast public key to everyone. **Risk**: Attackers impersonate you by claiming your key
+- **Publicly available Directory**: Centralized list storing keys with user details. Searchable but **vulnerable to tampering**
+- **Public Key Authority**: Trusted directory. Users query real-time to get correct keys. Safer than directory but still requires trusting the authority
+- **Certification Authorities (CA)**: Trusted entities issue **digital certificates** binding public key to identity. CA signs certificate with its own private key making tamper-proof. Standard in HTTPS/SSL
+- **Diffie-Hellman Protocol**: Two parties establish shared secret key safely over insecure network without pre-sharing anything. Both parties combine public and private values to derive same shared secret
+
+### Specialized Scenarios
+
+- **Wireless Sensor Networks (WSN)**: Standard public-key cryptography too expensive for tiny, low-powered sensors. Uses pre-installed secret keys distributed to nodes before deployment
+- **Group Key Management**: Multiple departments/branches need shared encryption keys. Uses polynomial-based schemes and **Group Security Agents (GSA)** to manage keys across groups
+- **Key Lifecycle & Compliance**: Professional environments follow complete lifecycle: generation → storage in HSM (Hardware Security Module) → periodic rotation → secure destruction. Must comply with standards (PCI DSS, HIPAA, etc.)

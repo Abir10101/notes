@@ -116,5 +116,5 @@ Data and process distribution determines how information and computational tasks
 |--------------|-----------------|------------|----------|
 | **SPSD** | Single | Single | Simple systems, centralized control |
 | **MPSD** | Multiple | Single | File sharing, workgroup applications |
-| **SPMD** | Single | Single | Geographically distributed applications |
+| **SPMD** | Single | Multiple | Geographically distributed applications |
 | **MPMD** | Multiple | Multiple | Enterprise systems, high availability |

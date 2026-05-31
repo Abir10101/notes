@@ -50,24 +50,22 @@ If a transaction waits longer than a threshold (e.g., 5 seconds), the system **a
 Prevention eliminates deadlock *before* it can occur, so no detection is ever needed.
 
 ### 1. Wait-Die Scheme (Age-based)
-Each transaction is assigned a **timestamp** (lower = older = higher priority).
+Older transactions wait. Younger ones always die. The circular wait condition can never form.
 
 ```
-T1 (timestamp = 10)   vs   T2 (timestamp = 20)
-
-• If T1 (older) wants a lock held by T2 (younger) → T1 WAITS
-• If T2 (younger) wants a lock held by T1 (older) → T2 DIES (aborts & restarts)
+T1 requests a lock held by T2.
+- If T1 is older than T2 -> T1 WAITS
+- If T1 is younger than T2 -> T1 DIES
 ```
-
-**Why no deadlock?** A younger transaction never waits for an older one — it aborts instead. The circular wait condition can never form.
 
 ### 2. Wound-Wait Scheme (also Age-based, reversed)
-```
-• If T1 (older) wants a lock held by T2 (younger) → T1 WOUNDS T2 (forces T2 to abort)
-• If T2 (younger) wants a lock held by T1 (older) → T2 WAITS
-```
+Younger transactions wait. Older ones always preempt.
 
-Here, the **older** transaction always wins. Again, no circular wait is possible.
+```
+T1 requests a lock held by T2.
+- If T1 is older than T2 -> T1 WOUNDS T2 (forces T2 to roll back) so T1 can proceed
+- If T1 is younger than T2 -> T1 WAITS
+```
 
 ### 3. Lock Ordering (Resource Ordering)
 Assign a global order to all resources (e.g., tables/rows get IDs). Every transaction must acquire locks **in ascending order** of resource IDs, regardless of which site holds them.

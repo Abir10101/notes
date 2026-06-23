@@ -18,11 +18,8 @@
 
 # Links
 
-- <https://kissasian.sh> - korean movies
 - <https://mkvking.com> - movies
-- <https://xxizone.com> - movies
 - <https://www12.lunapic.com/editor> - picture editor
-- <https://appsco.pe> - get lite version of any app
 - <https://www.mathway.com> - math solver
 - <https://corrupt-a-file.net> - corrupt any file
 - <https://subdl.com> - substitles

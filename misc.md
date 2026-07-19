@@ -9,5 +9,3 @@ youtube shorts block from mobile
 m.youtube.com##ytm-rich-section-renderer.rich-section-single-column:has-text(Shorts)  
 !Hide Shorts section when searched (Computer)  
 youtube.com##iron-selector#chips > yt-chip-cloud-chip-renderer.style-scope.yt-chip-cloud-renderer:has-text(Shorts)  
-
-- call jio home and get connection

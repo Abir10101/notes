@@ -336,3 +336,6 @@
 - Cado Lake 🌟
 - Meiyazhagan 🌟
 - The lone ranger
+- Backrooms 2026
+- The Oddyssey 🌟
+- The summit of the gods 🌟

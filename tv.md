@@ -11,4 +11,5 @@ ott apps for old movies - Shemaroo, Hoichoi, Zee5, SonyLiv, Youtube
 jiohome - 600/month several ott apps + several channels
 DTH - cheaper
 
-- smart moniter - jiohome
+- smart moniter 13k - jiohome - 2k
+15k

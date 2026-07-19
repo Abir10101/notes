@@ -16,9 +16,9 @@ Uses **single shared secret key** for both encryption and decryption. Sender enc
 - Low overhead
 
 **Disadvantages**:
-- Key sharing problem—must safely transmit secret key through insecure network
-- Poor scaling—each pair of users needs unique key (100 users = 4,950 keys needed)
-- No non-repudiation—both parties have same key, cannot prove who sent message
+- Key sharing problem — must safely transmit secret key through insecure network
+- Poor scaling — each pair of users needs unique key (100 users = 4,950 keys needed)
+- No non-repudiation — both parties have same key, cannot prove who sent message
 
 **Techniques Used**:
 
